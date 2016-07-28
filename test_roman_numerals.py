@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import roman_numerals
 
-def test_input_is_arabic():
-    assert roman_numerals.input_is_integer(3) == True
-    assert roman_numerals.input_is_integer("III") == False
+def test_convert():
+    assert roman_numerals.convert(3) == "III"
+    assert roman_numerals.convert("III") == 3

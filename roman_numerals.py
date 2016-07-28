@@ -2,17 +2,18 @@
 # Copyright 2016 <iiv@openmailbox.org>
 # License: MIT
 
-# TODO:
-#   Add a function that converts Arabic numbers to Roman numbers 
-    #   (and vice versa)
+def roman_number_is_valid(n):
+    """roman_number_is_valid(n) -> Boolean""" # TODO
+    pass
 
-def input_is_integer(n):
-    """Checks if input is an integer, returns a Boolean"""
-    try:
-        if int(n):
-            return True
-    except:
-        return False
+roman_numbers = {"I" : 1, "V" : 5, "X" : 10, "L" : 50, 
+                 "C" : 100, "D" : 500, "M" : 1000}
 
 def convert(n):
-   pass 
+    """convert(n) -> Integer""" # TODO
+    try:
+        for character in n:
+            if character in roman_numbers:
+                return "Roman"
+    except:    
+        return "Arabic"
