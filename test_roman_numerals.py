@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
-import roman_numerals
+from roman_numerals import *
 
 def test_convert():
-    assert roman_numerals.convert(3) == "III"
-    assert roman_numerals.convert("III") == 3
+    assert convert(3) == "III"
+    assert convert("III") == 3
